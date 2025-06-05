@@ -1,0 +1,80 @@
+/* Horizontal navbar fix */
+.nav-links {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 100%;
+    overflow: hidden; /* Changed from overflow-x: auto to prevent scrollbar */
+    padding: 0 10px;
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+/* Style improvements for nav items */
+.nav-links a {
+    color: var(--text);
+    font-weight: 600;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 0.8rem 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 4px;
+    display: block; /* Ensure links take only necessary space */
+    width: auto; /* Prevent links from stretching */
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+    background-color: rgba(67, 206, 162, 0.1);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {    .nav-links {
+        flex-direction: row !important;
+        justify-content: flex-start;
+        flex-wrap: wrap; /* Changed from nowrap to wrap to prevent horizontal scrolling */
+        width: 100%;
+        gap: 0.8rem;
+        overflow: hidden; /* Changed from overflow-x: auto to prevent scrollbar */
+        padding: 8px 5px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .nav-links::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
+    }
+    
+    .nav-links a {
+        padding: 8px 12px !important;
+        font-size: 14px !important;
+        white-space: nowrap;
+    }
+    
+    /* Ensure that when the mobile menu is active, it stays horizontal */    .nav-links.active {
+        display: flex !important;
+        flex-direction: row !important;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 10px 5%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Dark mode support */
+    .dark-mode .nav-links.active {
+        background: var(--bg-dark);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}

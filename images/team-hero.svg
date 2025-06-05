@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradient">
+      <stop stop-color="#43cea2" offset="0%"></stop>
+      <stop stop-color="#185a9d" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <rect fill="#F9F9F9" x="0" y="0" width="800" height="600"></rect>
+    <g transform="translate(100, 100)">
+      <circle fill="url(#gradient)" opacity="0.2" cx="300" cy="200" r="200"></circle>
+      <text font-family="Arial-BoldMT, Arial" font-size="72" font-weight="bold" fill="#2A2A72">
+        <tspan x="140" y="170">TEAM</tspan>
+        <tspan x="105" y="250">POOKIES</tspan>
+      </text>
+      <path d="M550,140 C560,80 600,40 650,60 C700,80 720,140 690,190 C660,240 590,230 550,140 Z" fill="#FF6584" opacity="0.6"></path>
+      <path d="M50,300 C20,280 10,230 30,190 C50,150 100,140 140,170 C180,200 170,260 120,280 C90,290 70,310 50,300 Z" fill="#6C63FF" opacity="0.6"></path>
+      <path d="M480,300 C450,320 410,300 400,270 C390,240 410,200 440,190 C470,180 510,210 510,250 C510,290 510,280 480,300 Z" fill="#43CEA2" opacity="0.6"></path>
+    </g>
+  </g>
+</svg>

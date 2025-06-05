@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="memberGradient2">
+            <stop stop-color="#FF6584" offset="0%"></stop>
+            <stop stop-color="#FF4365" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#F0F0F0" cx="150" cy="150" r="150"></circle>
+        <g transform="translate(60, 40)">
+            <circle fill="url(#memberGradient2)" opacity="0.2" cx="90" cy="100" r="80"></circle>
+            <circle fill="#F9F9F9" cx="90" cy="70" r="40"></circle>
+            <path d="M50,120 C50,90 130,90 130,120 C130,180 50,180 50,120 Z" fill="#F9F9F9"></path>
+            <circle fill="#FF6584" cx="75" cy="65" r="5"></circle>
+            <circle fill="#FF6584" cx="105" cy="65" r="5"></circle>
+            <path d="M75,95 C75,85 105,85 105,95" stroke="#FF6584" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M75,55 L95,45 L105,55" stroke="#FF6584" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

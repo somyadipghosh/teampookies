@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Pookies - Hackathon Champions</title>    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav-fix.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <div class="text" data-text="Team Pookies">Team Pookies</div>
+        </div>
+    </div>
+    
+      <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="#home">
+                <img src="images/logo.svg" alt="Team Pookies Logo" class="logo-img">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hackathons">Hackathons</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="theme-toggle">
+                <button id="darkModeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <a href="#contact" class="nav-cta">Get in Touch</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Team Pookies">Team Pookies</h1>
+            <p class="subtitle">Turning Ideas into Innovations</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">Our Projects</a>
+                <a href="#team" class="btn secondary">Meet the Team</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="blob"></div>
+            <img src="images/team-hero.jpg" alt="Team illustration">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>About Us</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text reveal">
+                <h3>Who We Are</h3>
+                <p>Team Pookies is a dynamic group of passionate tech enthusiasts who come together to create innovative solutions for real-world problems. Founded in 2024, our team has participated in multiple hackathons, securing top positions with our creative approaches and technical expertise.</p>
+                <h3>Our Mission</h3>
+                <p>We aim to leverage cutting-edge technology to develop sustainable and impactful solutions that address pressing challenges in today's digital landscape.</p>
+                <h3>Our Vision</h3>
+                <p>To become pioneers in technological innovation, fostering a community of problem-solvers dedicated to making a difference through code.</p>
+            </div>
+            <div class="about-stats reveal">
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <h4>10+</h4>
+                    <p>Hackathons</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-award"></i>
+                    <h4>1</h4>
+                    <p>Awards</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-code"></i>
+                    <h4>15+</h4>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-coffee"></i>
+                    <h4>∞</h4>
+                    <p>Coffee Cups</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="section-title">
+            <h2>Meet Our Team</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member reveal">
+                <div class="member-img">
+                    <img src="images/member1.svg" alt="Team Member 1">
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="member-info">
+                    <h3>Alex Johnson</h3>
+                    <p class="role">Team Lead & Full-Stack Developer</p>
+                    <p>Python enthusiast with expertise in machine learning and data visualization. 5+ years experience in building scalable web applications.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member reveal">
+                <div class="member-img">
+                    <img src="images/member2.svg" alt="Team Member 2">
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="member-info">
+                    <h3>Samantha Lee</h3>
+                    <p class="role">UI/UX Designer</p>
+                    <p>Creative designer with an eye for detail. Specializes in creating intuitive and visually appealing user interfaces that enhance user experience.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member reveal">
+                <div class="member-img">
+                    <img src="images/member3.svg" alt="Team Member 3">
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="member-info">
+                    <h3>Michael Chen</h3>
+                    <p class="role">Backend Developer</p>
+                    <p>Database expert with a strong foundation in server-side technologies. Known for writing clean, efficient code and solving complex problems.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-member reveal">
+                <div class="member-img">
+                    <img src="images/member4.svg" alt="Team Member 4">
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="member-info">
+                    <h3>Olivia Rodriguez</h3>
+                    <p class="role">Frontend Developer</p>
+                    <p>JavaScript wizard with a passion for creating responsive and interactive web experiences. Advocates for accessible and inclusive design.</p>
+                </div>
+            </div>
+        </div>    </section>
+
+    <!-- Hackathons Timeline Section -->
+    <section id="hackathons" class="hackathons">
+        <div class="section-title">
+            <h2>Our Hackathon Journey</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline">
+                <!-- Timeline item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 2025</div>
+                    <div class="timeline-content">
+                        <h3>TechCrunch Disrupt</h3>
+                        <span class="timeline-badge winner">Winner</span>
+                        <p>Secured first place with our AI-driven personal finance manager, revolutionizing how individuals manage their finances with predictive analytics.</p>
+                        <div class="timeline-tech">
+                            <span>React Native</span>
+                            <span>TensorFlow</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">April 2025</div>
+                    <div class="timeline-content">
+                        <h3>Hackathon for Good</h3>
+                        <span class="timeline-badge runnerup">Runner-up</span>
+                        <p>Created an accessibility platform that helps visually impaired users navigate urban environments through audio-guided directions.</p>
+                        <div class="timeline-tech">
+                            <span>JavaScript</span>
+                            <span>Google Maps API</span>
+                            <span>Web Speech API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">February 2025</div>
+                    <div class="timeline-content">
+                        <h3>Global AI Hackathon</h3>
+                        <span class="timeline-badge winner">Winner</span>
+                        <p>Developed an innovative NLP solution for real-time language translation in video calls, breaking down global communication barriers.</p>
+                        <div class="timeline-tech">
+                            <span>Python</span>
+                            <span>BERT</span>
+                            <span>WebRTC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">October 2024</div>
+                    <div class="timeline-content">
+                        <h3>Climate Change Hack</h3>
+                        <span class="timeline-badge special">Special Recognition</span>
+                        <p>Built a blockchain-based platform for tracking and verifying carbon credits, bringing transparency to environmental sustainability efforts.</p>
+                        <div class="timeline-tech">
+                            <span>Solidity</span>
+                            <span>Ethereum</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item 5 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 2024</div>
+                    <div class="timeline-content">
+                        <h3>HealthTech Innovation</h3>
+                        <span class="timeline-badge winner">Winner</span>
+                        <p>Developed a telehealth solution connecting patients in rural areas with medical specialists, featuring secure video consultations and medical record sharing.</p>
+                        <div class="timeline-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>HIPAA Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-title">
+            <h2>Our Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-slider">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/project1.svg" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>EcoTrack</h3>
+                    <p>A sustainability platform that uses AI to help users reduce their carbon footprint through personalized recommendations.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>TensorFlow</span>
+                    </div>
+                    <a href="#" class="btn project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/project2.svg" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>MediConnect</h3>
+                    <p>A telehealth solution that bridges the gap between patients and healthcare providers in underserved communities.</p>
+                    <div class="tech-stack">
+                        <span>Vue.js</span>
+                        <span>Firebase</span>
+                        <span>WebRTC</span>
+                    </div>
+                    <a href="#" class="btn project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/project3.svg" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>FinViz</h3>
+                    <p>An educational tool that visualizes complex financial concepts, making financial literacy accessible to everyone.</p>
+                    <div class="tech-stack">
+                        <span>D3.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="#" class="btn project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn" aria-label="Previous project"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+            <button class="next-btn" aria-label="Next project"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-title">
+            <h2>What People Say</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="testimonial-container">
+            <div class="testimonial-slides">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">Team Pookies delivered an exceptional solution for our healthcare platform. Their attention to detail and innovative approach exceeded our expectations.</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial1.svg" alt="Testimonial Author 1">
+                        <div class="author-info">
+                            <h4>Dr. Sarah Johnson</h4>
+                            <p>CTO, MediTech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">Working with Team Pookies at the Global Tech Hackathon was incredible. Their collaborative spirit and technical expertise made them deserving winners.</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial2.svg" alt="Testimonial Author 2">
+                        <div class="author-info">
+                            <h4>Mark Wilson</h4>
+                            <p>Judge, Global Tech Hackathon</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">The EcoTrack application developed by Team Pookies has transformed how our community approaches sustainability. A truly inspiring project with measurable impact.</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial3.svg" alt="Testimonial Author 3">
+                        <div class="author-info">
+                            <h4>Lisa Chen</h4>
+                            <p>Director, GreenFuture Initiative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="testimonial-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots"></div>
+                <button class="testimonial-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info reveal">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hello@teampookies.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Innovation Hub, Tech Valley, CA</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn submit-btn">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+                <div class="form-message"></div>
+            </form>
+        </div>
+    </section>    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Team Pookies</h3>
+                <p>Turning Ideas into Innovations. We build cutting-edge solutions for real-world problems.</p>
+                <div class="social-links footer-socials">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Team Pookies. All Rights Reserved. Made with <i class="fas fa-heart"></i> in Tech Valley</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

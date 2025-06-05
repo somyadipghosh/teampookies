@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="projectGradient3">
+            <stop stop-color="#6C63FF" offset="0%"></stop>
+            <stop stop-color="#2A2A72" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F0F0F0" x="0" y="0" width="600" height="400"></rect>
+        <g transform="translate(50, 50)">
+            <rect fill="url(#projectGradient3)" opacity="0.2" x="0" y="0" width="500" height="300" rx="20"></rect>
+            <g transform="translate(100, 50)">
+                <path d="M150,50 L200,150 L150,250 L100,150 Z" fill="#6C63FF" opacity="0.8"></path>
+                <path d="M150,75 L185,150 L150,225 L115,150 Z" fill="#FFFFFF"></path>
+                <circle fill="#6C63FF" cx="150" cy="150" r="15"></circle>
+                <path d="M50,175 L75,175 L75,200 L50,200 Z" fill="#6C63FF"></path>
+                <path d="M225,175 L250,175 L250,200 L225,200 Z" fill="#6C63FF"></path>
+                <path d="M50,100 L75,100 L75,125 L50,125 Z" fill="#6C63FF"></path>
+                <path d="M225,100 L250,100 L250,125 L225,125 Z" fill="#6C63FF"></path>
+                <path d="M50,100 L50,200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="5,5"></path>
+                <path d="M250,100 L250,200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="5,5"></path>
+                <path d="M75,200 L225,200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="5,5"></path>
+                <path d="M75,100 L225,100" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="5,5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

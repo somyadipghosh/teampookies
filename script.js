@@ -409,6 +409,83 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 8000);
         });
     }
+      // Gallery filtering functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    if (filterButtons.length > 0 && galleryItems.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Filter gallery items
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        // Show item with animation
+                        item.style.opacity = '0';
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                        }, 100);
+                    } else {
+                        // Hide item
+                        item.style.opacity = '0';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    }
+    
+    // Gallery lightbox functionality
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const imgSrc = this.querySelector('img').getAttribute('src');
+            const imgAlt = this.querySelector('img').getAttribute('alt');
+            const imgCaption = this.querySelector('.gallery-text').textContent;
+            
+            // Create lightbox elements
+            const lightbox = document.createElement('div');
+            lightbox.classList.add('lightbox');
+            
+            // Add lightbox content
+            lightbox.innerHTML = `
+                <div class="lightbox-content">
+                    <button class="lightbox-close">&times;</button>
+                    <img src="${imgSrc}" alt="${imgAlt}" class="lightbox-image">
+                    <div class="lightbox-caption">${imgCaption}</div>
+                </div>
+            `;
+            
+            // Add to DOM
+            document.body.appendChild(lightbox);
+            
+            // Prevent scrolling on body
+            document.body.style.overflow = 'hidden';
+            
+            // Add fade-in animation
+            setTimeout(() => {
+                lightbox.style.opacity = '1';
+            }, 10);
+            
+            // Close lightbox on click
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                    lightbox.style.opacity = '0';
+                    document.body.style.overflow = 'visible';
+                    setTimeout(() => {
+                        document.body.removeChild(lightbox);
+                    }, 300);
+                }
+            });
+        });
+    });
     
     // Initial calls
     revealAnimation();

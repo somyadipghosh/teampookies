@@ -264,6 +264,12 @@ body.dark-mode {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
+/* Dark mode for logo */
+.dark-mode .logo-img {
+    border-color: var(--primary);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 /* About section */
 .dark-mode .section-title h2 {
     color: var(--text-dark);
@@ -560,15 +566,28 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    padding: 0 5px; /* Add some padding around the logo */
 }
 
 .logo-img {
-    height: 40px;
+    height: 34px; /* Smaller size */
+    width: 34px; /* Set width to equal height for perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circular container */
+    border: 1px solid var(--primary); /* Optional: adds a subtle border */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     transition: var(--transition);
 }
 
+/* Logo hover effect */
+.logo-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
 .scrolled .logo-img {
-    height: 35px;
+    height: 30px; /* Smaller when scrolled */
+    width: 30px; /* Keep width equal to height */
 }
 
 .nav-right {
